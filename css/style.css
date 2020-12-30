@@ -1,0 +1,80 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background: url(../imgs/bg1.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.clock{
+    width: 350px;
+    height: 350px;
+    background: rgba(255,255,255,.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid rgba(255,255,255,.1);
+    box-shadow: 20px 20px 30px rgba(255,255,255,.1);
+}
+
+.clock img{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+.hand{
+    background: rgba(255,255,255,.2);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    transform-origin: bottom;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#hour{
+    width: .6rem;
+    height: 3.5rem;
+}
+
+#min{
+    width: .4rem;
+    height: 4rem;
+}
+
+#sec{
+    width: .2rem;
+    height: 5.5rem;
+}
+
+#day{
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding: 6px;
+}
