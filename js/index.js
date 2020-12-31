@@ -69,11 +69,9 @@ let clock = function (){
 setInterval(clock, 1000);
 
 setInterval(() => {
-    let no = Math.floor(Math.random() * 4)
-    if(no<1){
-        no=1;
-        console.log(no)
+    a++;
+    if(a>3){
+        a=1;
     }
-    main.style.backgroundImage = `url(imgs/bg${no}.jpg)`
-    // console.log(no)
-}, 2000);
+    main.style.backgroundImage = `url(imgs/bg${a}.jpg)`
+}, 4000);
